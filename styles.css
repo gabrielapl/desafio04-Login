@@ -1,0 +1,177 @@
+@import url(./variaveis.css);
+
+/*Variáveis*/
+:root {
+  --green: #04c35c;
+  --blue: #2b6cb0;
+
+  --white: #ffffff;
+  --white300: #f7fafc;
+
+  --dark: #1a202c;
+  --input: #e8e8e8;
+}
+
+body {
+  font-family: Merriweather;
+}
+
+.image {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.login-forms {
+  color: var(--dark);
+  padding: 71px 32px;
+}
+
+.login-forms h1 {
+  font-weight: 400;
+  font-size: 16px;
+
+  margin-bottom: 7px;
+}
+
+.login-forms h2 {
+  font-weight: 700;
+  font-size: 26px;
+
+  margin-bottom: 39px;
+}
+
+
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-wrapper button {
+  width: 100%;
+  color: var(--white);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+
+  padding: 15px 0 16px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+
+  font-family: Lato;
+  font-weight: normal;
+  color: var(--dark);
+
+  margin-bottom: 17px;
+
+}
+
+.login-inputs label {
+  font-size: 16px;
+
+  margin-bottom: 11px;
+}
+
+.login-inputs input {
+  width: 100%;
+  border: 1px solid var(--input);
+  border-radius: 5px;
+
+  padding: 16px 0 17px 20px;
+  margin-bottom: 11px;
+}
+
+.forgot-password {
+  margin-bottom: 26px;
+
+  font-family: Lato;
+  font-size: 14px;
+  color: var(--dark);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remember input{
+  margin-right: 11px;
+}
+
+.forgot-password a {
+  color: var(--blue);
+}
+
+.login-button {
+  background-color: var(--green);
+
+  margin-bottom: 15px;
+}
+
+.login-button:hover {
+  background-color: var(--white);
+  color: var(--green);
+  border: 1px solid var(--green);
+  cursor: pointer;
+}
+
+.google-button {
+  background-color: var(--dark);
+
+  margin-bottom: 138px;
+}
+
+.google-button:hover {
+  background-color: var(--white);
+  color: var(--dark);
+  border: 1px solid var(--dark);
+
+  cursor: pointer;
+}
+
+.google-button img{
+  margin-right: 11px;
+}
+
+.register p{
+  color: var(--dark);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.register a{
+  color: var(--blue);
+ 
+}
+
+
+@media (min-width: 1200px) {
+  .image {
+    opacity: 1;
+    overflow: visible;
+    position: relative;
+  }
+
+  main {
+    display: flex;
+
+    justify-content: space-around;
+  }
+
+  .login-forms {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+}
